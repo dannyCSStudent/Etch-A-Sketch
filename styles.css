@@ -56,13 +56,27 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+
+}
+#middle #first-column #rangeValue {
+    border: 1px solid black;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    font-size: 30px;
 }
 
-#middle #first-column span {
+#middle #first-column #slider {
     display: flex;
     flex: 3;
     justify-content: center;
     align-items: center;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(270deg);
+    border: 1px solid greenyellow;
+    
 }
 
 #middle #first-column button {
@@ -80,6 +94,10 @@
     flex-wrap: wrap;
     
 }   
+
+#middle #second-column :hover {
+    cursor: crosshair;
+}
 /* ----------------------------------------------------------------------- */
 
 #middle #third-column {
