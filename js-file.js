@@ -1,13 +1,11 @@
 const container = document.querySelector('#second-column');
-
-const gridLenght = document.getElementById("slider").value;
+const initialLenght = document.getElementById("slider").value;
 
 // creates the divs in a flexbox container
 // after calculating the size of the div's to
 // fit perfectly, will build divs and wrap around.
 function createGrid(size) {
     for (let i = 0; i < (size ** 2); i++) {
-        
         const content = document.createElement('div');
         content.classList.add('content');
         content.style.flexBasis = `${100 / size}%`;
@@ -31,8 +29,7 @@ function listener() {
 }
 
 
-
-createGrid(gridLenght);
+createGrid(initialLenght);
 // ----------------------Buttons---------------------------------
 
 const buttons = document.querySelectorAll("button");

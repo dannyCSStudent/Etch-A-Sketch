@@ -4,13 +4,21 @@
     padding: 0;
     width: 100%;
     height: 100%;    
+    color: cadetblue;
 }
 
 #container {
     display: flex;
     min-height: 100%;
     flex-direction: column;
-       
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+
+    /* background: rgba(19, 1, 1, 0.56);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(2.3px);
+        */
 }
 
 /* -------------------------------------top------------------------------------ */
@@ -23,12 +31,14 @@
 
 #top #title {
     display: flex;
-    gap: 15px;
+    gap: 30px;
 }
 #top #title #magic-label {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-family: "tangerine", sans-serif;
+    font-size: 30px;
 }
 
 #top #title #etch-a-sketck-label {
@@ -38,11 +48,14 @@
     align-items: center;
     font-size: 70px;
     flex: 1;
+    font-family: "Island Moments", sans-serif;
 }
 
 #top #title #board-label {
     display: flex;
     align-items: center;
+    font-family: "tangerine", sans-serif;
+    font-size: 30px;
 }
 
 /* ------------------------------middle-------------------------------- */
@@ -50,20 +63,23 @@
 #middle {
     display: flex;
     flex-basis: 70%;
+    
 }
 
 #middle #first-column {
     flex: 1;
-    display: flex;
+    display: grid;
     flex-direction: column;
-
+    accent-color: currentcolor;
+    gap: 100px;
 }
+
 #middle #first-column #rangeValue {
-    border: 1px solid black;
     display: flex;
     height: auto;
     justify-content: center;
     font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 #middle #first-column #slider {
@@ -75,24 +91,25 @@
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(270deg);
-    border: 1px solid greenyellow;
-    
 }
 
 #middle #first-column button {
     font-size: 30px;
     flex: 1;
+    font-family: "Bebas Neue", sans-serif;
+    background: linear-gradient(112.1deg,
+    rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
 }
 
 
 /* -------------------------------------------------------------------- */
 #middle #second-column {
     flex: 4;
-    border: 1px solid red;
     display: flex;
     
     flex-wrap: wrap;
-    
+    background-color: white;
+    border: 3px solid cadetblue;
 }   
 
 #middle #second-column :hover {
@@ -109,6 +126,9 @@
 
 #middle #third-column button {
     font-size: 30px;    
+    font-family: "Bebas Neue", sans-serif;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+
 }
 
 /* ------------------------bottom------------------------------------ */
